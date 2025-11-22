@@ -1,6 +1,6 @@
 function Experience() {
   return (
-    <section className="min-h-screen py-20 relative z-10">
+    <section className="min-h-screen pt-32 pb-20 relative z-10">
       <div className="max-w-4xl mx-auto px-8">
         <h2 className="text-5xl font-bold mb-12">
           experience<span className="text-cyan-400">_</span>
@@ -32,8 +32,7 @@ function Experience() {
             <p className="text-cyan-400 mb-4">Independent Researcher</p>
             <p className="text-gray-300 leading-relaxed">
               I study how artificial intelligence affects human decision-making speed and cognitive workflows. My recent work focuses on how AI-assisted tasks change our mental load, attention patterns, and the way the brain handles problem-solving when part of the process is automated.
-
-I publish early-stage research, explore experimental ideas, and analyze how human reasoning adapts when supported by AI systems. My current interest is the impact of AI-assisted decision-making on prefrontal processing speed.
+              I publish early-stage research, explore experimental ideas, and analyze how human reasoning adapts when supported by AI systems. My current interest is the impact of AI-assisted decision-making on prefrontal processing speed.
             </p>
           </div>
         </div>
