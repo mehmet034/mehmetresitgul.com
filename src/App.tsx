@@ -17,7 +17,7 @@ function App() {
     canvas.height = window.innerHeight;
 
     const dots: { x: number; y: number; baseX: number; baseY: number }[] = [];
-    const spacing = 40;
+    const spacing = 20;
     const maxDistance = 150;
 
     for (let x = 0; x < canvas.width; x += spacing) {
