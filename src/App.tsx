@@ -90,7 +90,7 @@ function App() {
             onClick={() => scrollToSection('home')}
             className="text-sm font-medium hover:text-cyan-400 transition-colors flex items-center gap-2"
           >
-            jakub
+            mehmet resit gul
           </button>
           <div className="flex items-center gap-8">
             <button
