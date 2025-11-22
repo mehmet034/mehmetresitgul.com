@@ -8,19 +8,20 @@ function Contact() {
           contact<span className="text-cyan-400">_</span>
         </h2>
 
-        <div className="backdrop-blur-md bg-white/5 border border-white/10 rounded-3xl p-12 shadow-2xl">
+        <div className="backdrop-blur-md bg-white/3 border border-white/10 rounded-3xl p-12 shadow-2xl">
           <div className="space-y-8">
             <div className="flex items-center gap-4 group">
+               
               <Twitter className="text-cyan-400" size={24} />
               <div>
                 <p className="text-gray-400 text-sm">twitter</p>
                 <a
-                  href="https://twitter.com/jakub_works"
+                  href="https://twitter.com/mresitcom"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-cyan-400 hover:underline text-lg"
                 >
-                  @jakub_works
+                  @mresitcom
                 </a>
               </div>
             </div>
@@ -30,25 +31,25 @@ function Contact() {
               <div>
                 <p className="text-gray-400 text-sm">linkedin</p>
                 <a
-                  href="https://linkedin.com/in/jakubkrzypczak"
+                  href="https://linkedin.com/in/mehmetresitgul"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-cyan-400 hover:underline text-lg"
                 >
-                  jakubkrzypczak
+                  mehmetresitgul
                 </a>
-              </div>
+              </div> 
             </div>
 
-            <div className="flex items-center gap-4 group">
+            <div className="flex items-center gap-4 group"> 
               <Mail className="text-cyan-400" size={24} />
               <div>
                 <p className="text-gray-400 text-sm">email</p>
                 <a
-                  href="mailto:me@jakub.works"
+                  href="mailto:mehmetresitgul@outlook.com.tr"
                   className="text-cyan-400 hover:underline text-lg"
                 >
-                  me@jakub.works
+                  mehmetresitgul@outlook.com.tr
                 </a>
               </div>
             </div>
