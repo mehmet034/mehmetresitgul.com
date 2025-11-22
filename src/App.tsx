@@ -36,11 +36,12 @@ function App() {
 
         if (distance < maxDistance) {
           const force = (maxDistance - distance) / maxDistance;
-          dot.x = dot.baseX + dx * force * 0.3;
-          dot.y = dot.baseY + dy * force * 0.3;
+          const waveEffect = Math.sin(force * Math.PI) * force;
+          dot.x = dot.baseX + dx * waveEffect * 0.5;
+          dot.y = dot.baseY + dy * waveEffect * 0.5;
         } else {
-          dot.x += (dot.baseX - dot.x) * 0.05;
-          dot.y += (dot.baseY - dot.y) * 0.05;
+          dot.x += (dot.baseX - dot.x) * 0.08;
+          dot.y += (dot.baseY - dot.y) * 0.08;
         }
 
         ctx.beginPath();
@@ -78,7 +79,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white relative overflow-x-hidden">
+    <div className="text-white relative overflow-x-hidden" style={{ backgroundColor: '#0F0F0F', minHeight: '100vh' }}>
       <canvas
         ref={canvasRef}
         className="fixed inset-0 pointer-events-none z-0"
