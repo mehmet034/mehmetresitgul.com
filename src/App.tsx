@@ -119,7 +119,7 @@ function AppContent() {
               onClick={() => navigateTo('home')}
               className="text-xl font-medium hover:text-cyan-400 transition-colors"
             >
-              Mehmet Resit Gul
+              Mehmet
             </button>
           </div>
           <div className="flex items-center gap-10">
