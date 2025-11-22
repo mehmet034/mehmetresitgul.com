@@ -8,34 +8,25 @@ function About() {
           about me<span className="text-cyan-400">_</span>
         </h2>
 
-        <div className="backdrop-blur-md bg-white/5 border border-white/10 rounded-3xl p-8 mb-12 shadow-2xl">
+        <div className="backdrop-blur-md bg-white/3 border border-white/10 rounded-3xl p-8 mb-12 shadow-2xl">
           <div className="flex items-start gap-4 mb-6">
             <Briefcase className="text-cyan-400 mt-1" size={24} />
             <div>
               <h3 className="text-2xl font-bold mb-4">professional bio</h3>
               <p className="text-gray-300 mb-4 leading-relaxed">
-                17 yaşında bir startup kurucusu ve AI otomasyon geliştiricisiyim.
-                Takazade'yi — Türkiye'nin ilk ve tek yetenek takas platformunu —
-                tamamen bireysel olarak, sıfır yatırım ile hayata geçirdim.
+                Hi, I’m Mehmet Reşit Gül. I’m a 17-year-old startup founder and AI automation developer.
               </p>
               <p className="text-gray-300 mb-4 leading-relaxed">
-                Şu anda 11. sınıf öğrencisiyim; okulun yanında aktif şekilde ürün
-                geliştiriyor, otomasyon projeleri üretiyor ve e-ticaret tarafında
-                markaların satış süreçlerini büyüten, operasyon yükünü azaltan ve
-                günlük akışlarını otomatikleştiren sistemler tasarlıyorum.
+                I built Turkey’s first and only talent exchange platform. I live in Istanbul, and I’m currently an 11th-grade student with three years of hands-on industry experience through continuous internships. Besides that, I build products, create n8n-based automation systems, and design workflows that help e-commerce brands grow their sales, reduce operational load, and automate their daily processes.
               </p>
               <p className="text-gray-300 mb-4 leading-relaxed">
-                Çalışmalarım; yapay zekâ, no-code prototipleme ve bilişsel
-                nörobilim alanlarını birleştiriyor. Kimi zaman kendi mağazalarım,
-                kimi zaman birlikte çalıştığım markalar için; sipariş akışını,
-                müşteri iletişimini, veri işleme adımlarını ve backend süreçlerini
-                hızlandıran küçük ama etkili mikro sistemler geliştiriyorum.
+                My work sits at the intersection of artificial intelligence, no-code prototyping, and cognitive neuroscience. For my own projects and for the brands I work with, I build small but powerful micro-systems that speed up order flow, customer communication, data processing, and backend operations.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                Büyük vizyon anlatmak yerine çalışan ürün üretmeyi tercih ediyorum.
-                Felsefem net:{' '}
+                I don’t care about talking big. I care about building things that work.
+My philosophy is simple: {' '}
                 <span className="text-cyan-400 font-semibold">
-                  üret, test et, geliştir, güçlendir.
+                  build, test, provide value, improve, repeat.
                 </span>
               </p>
             </div>
@@ -87,6 +78,6 @@ function About() {
       </div>
     </section>
   );
-}
+} 
 
 export default About;
