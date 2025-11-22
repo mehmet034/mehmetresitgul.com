@@ -110,7 +110,11 @@ function AppContent() {
       <nav className="fixed top-8 left-1/2 -translate-x-1/2 z-50 w-auto mx-auto px-4">
         <div className="backdrop-blur-xl bg-black/15 border border-white/20 rounded-full px-12 py-3 shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.35),inset_0_0_10px_4px_rgba(255,255,255,0.15),0_4px_16px_rgba(17,17,26,0.05),0_8px_24px_rgba(17,17,26,0.05),0_16px_56px_rgba(17,17,26,0.05)] hover:bg-black/35 hover:border-white/30 transition-all duration-300 flex items-center justify-between min-w-[800px]">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-gray-600 border border-white/20"></div>
+            <img 
+  src={profileImg} 
+  alt="Mehmet Resit Gul" 
+  className="w-8 h-8 rounded-full border border-white/20 object-cover"
+/>
             <button
               onClick={() => navigateTo('home')}
               className="text-xl font-medium hover:text-cyan-400 transition-colors"
