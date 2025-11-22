@@ -101,55 +101,43 @@ function AppContent() {
         className="fixed inset-0 pointer-events-none z-0"
       />
 
-<nav className="fixed top-8 left-1/2 -translate-x-1/2 z-50 w-auto mx-auto px-4">
-  <div className="backdrop-blur-xl bg-black/15 border border-white/20 rounded-full px-12 py-3 shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.35),inset_0_0_10px_4px_rgba(255,255,255,0.15),0_4px_16px_rgba(17,17,26,0.05),0_8px_24px_rgba(17,17,26,0.05),0_16px_56px_rgba(17,17,26,0.05)] hover:bg-black/35 hover:border-white/30 transition-all duration-300 flex items-center gap-10">
-    <div className="flex items-center gap-2">
-      <div className="w-8 h-8 rounded-full bg-gray-600 border border-white/20"></div>
-      <button
-        onClick={() => navigateTo('home')}
-        className="text-xl font-medium hover:text-cyan-400 transition-colors"
-      >
-        Mehmet Resit Gul
-      </button>
-    </div>
-    <div className="flex items-center gap-10">
-      <button
-        onClick={() => navigateTo('about')}
-        className={`text-sm font-normal transition-colors relative ${
-          activeSection === 'about' ? 'text-cyan-400' : 'hover:text-gray-300'
-        }`}
-      >
-        <span className="relative z-10">about me</span>
-        {activeSection === 'about' && (
-          <span className="absolute inset-0 bg-cyan-400/10 blur-xl rounded-full"></span>
-        )}
-      </button>
-      <button
-        onClick={() => navigateTo('experience')}
-        className={`text-sm font-normal transition-colors relative ${
-          activeSection === 'experience' ? 'text-cyan-400' : 'hover:text-gray-300'
-        }`}
-      >
-        <span className="relative z-10">experience</span>
-        {activeSection === 'experience' && (
-          <span className="absolute inset-0 bg-cyan-400/10 blur-xl rounded-full"></span>
-        )}
-      </button>
-      <button
-        onClick={() => navigateTo('contact')}
-        className={`text-sm font-normal transition-colors relative ${
-          activeSection === 'contact' ? 'text-cyan-400' : 'hover:text-gray-300'
-        }`}
-      >
-        <span className="relative z-10">contact</span>
-        {activeSection === 'contact' && (
-          <span className="absolute inset-0 bg-cyan-400/10 blur-xl rounded-full"></span>
-        )}
-      </button>
-    </div>
-  </div>
-</nav>
-      
+      <nav className="fixed top-8 left-1/2 -translate-x-1/2 z-50 w-full max-w-2xl mx-auto px-8">
+        <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-full px-8 py-3 shadow-2xl flex items-center justify-between hover:bg-white/15 transition-colors duration-300">
+          <button
+            onClick={() => navigateTo('home')}
+            className="text-sm font-medium hover:text-cyan-400 transition-colors flex items-center gap-2"
+          >
+            Mehmet Resit Gul
+          </button>
+          <div className="flex items-center gap-8">
+            <button
+              onClick={() => navigateTo('about')}
+              className={`text-sm font-medium transition-colors ${
+                activeSection === 'about' ? 'text-cyan-400' : 'hover:text-cyan-400'
+              }`}
+            >
+              about me
+            </button>
+            <button
+              onClick={() => navigateTo('experience')}
+              className={`text-sm font-medium transition-colors ${
+                activeSection === 'experience' ? 'text-cyan-400' : 'hover:text-cyan-400'
+              }`}
+            >
+              experience
+            </button>
+            <button
+              onClick={() => navigateTo('contact')}
+              className={`text-sm font-medium transition-colors ${
+                activeSection === 'contact' ? 'text-cyan-400' : 'hover:text-cyan-400'
+              }`}
+            >
+              contact
+            </button>
+          </div>
+        </div>
+      </nav>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -157,8 +145,8 @@ function AppContent() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
-      <footer className="py-8 text-center text-gray-500 text-sm absolute bottom-0 left-0 right-0 z-10">
-        <p>&copy; 2025 Mehmet Reşit Gül</p>
+      <footer className="py-8 text-center text-gray-500 text-sm relative z-10">
+        <p>&copy; 2025 jakub.works</p>
       </footer>
     </div>
   );
